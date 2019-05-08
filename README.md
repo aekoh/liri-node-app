@@ -8,7 +8,14 @@ A Language Interpretation and Recognition Interface command line
  * name of the venue
  * venue location
  * date of event
- of your favorite Bands in town simply by entering the name of the band/artist:
+ of your favorite Bands in town simply by entering the name of the band/artist
+ 
+ ### How to get started? ###
+ * Type in this command followed by your band of choice.
+ * In return you should get a venue, location and event date.
+ 
+
+ 
 
 
 
