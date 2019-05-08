@@ -4,26 +4,26 @@ require("dotenv").config();
 // This will allow me to use Axios for requests
 let axios = require("axios");
 
-// File systems standard to node
+// fs also known as file system
 const fs = require("fs");
 
-// Require moment
+//  you need to Require moment
 const moment = require("moment");
 
-// Import keys.js and store as variable
+// Here is where i Import and store keys.js as variable
 const keys = require("./keys.js");
 
-// Spotify api and wrapper
+// This will be my Spotify api and wrapper
 const Spotify = require("node-spotify-api");
 const spotify = new Spotify(keys.spotify);
 
-// OMDB api
+// This is the OMDB API
 let omdb = keys.omdb;
 
-// Bandsintown api
+// This is the Bandsintown API
 let bandsintown = keys.bandsintown;
 
-// User input and command
+// This code gets us User input and command
 let userInput = process.argv[2];
 let userQuery = process.argv[3];
 
@@ -72,13 +72,13 @@ function concertThis(artist) {
     });
 }
 
-// Show the following info about song: artist(s), song name, preview link of song, album
-// If no song is provided, default to "The Sign" by Ace of Base
+// This will show the information that is: artist(s), song name, preview link of song, album
+//  The default will be set to "The Sign" by Ace of Base is a user does NOT type in a song.
 
 function spotifyThis(song) {
-  // If no song is provided, default to "The Sign" by Ace of Base
+  // default to "The Sign" by Ace of Base if no song is entered
   if (!song) {
-    song = "The Sign Ace of Base"; // adding artist name here bc "the sign" returning harry styles response
+    song = "The Sign Ace of Base"; // this is where i will be adding the artist name 
   }
 
   spotify.search({ type: "track", query: song }, function(err, data) {
@@ -92,7 +92,7 @@ function spotifyThis(song) {
 }
 
 // Output the following info: title, year, IMDB rating, Rotten Tomatoes rating, country, language, plot, actors
-// If user doesn't type movie, output "Mr. Nobody"
+//  output "Mr. Nobody" if the user doesnt type a movie
 
 function movieThis(movie) {
   // If user doesn't type movie, output "Mr. Nobody"
