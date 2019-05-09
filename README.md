@@ -72,9 +72,14 @@ A Language Interpretation and Recognition Interface command line
 # DEVELOPER TOOLS - 
 
 
-http://www.artists.bandsintown.com/bandsintown-api
-The function below was used to search the bandsintown website for artist events.
-I used the .get() and .then() method to render the venue name, location and event date in the format of (MM/DD/YYYY).
+###   http://www.artists.bandsintown.com/bandsintown-api  ###
+
+
+
+
+
+* The function below was used to search the bandsintown website for artist events.
+  I used the .get() and .then() method to render the venue name, location and event date in the format of (MM/DD/YYYY).
 
 
 
@@ -96,7 +101,12 @@ I used the .get() and .then() method to render the venue name, location and even
 
 
 
-https://www.npmjs.com/package/node-spotify-api
+###   https://www.npmjs.com/package/node-spotify-api  ###
+
+
+
+
+
 This function starts of assigning a default song called "The Sign" by Ace of Base.
 The rest of the function will render the artist name, preview of the song link and Album name.
 
@@ -122,7 +132,12 @@ The rest of the function will render the artist name, preview of the song link a
 
 
 
-http://www.omdbapi.com/
+###     http://www.omdbapi.com/  ###
+
+
+
+
+
 This function starts off by assigning a default movie called "Mr. Nobody".
 The rest of the function will use a .get() method to render the movies Title, year, IMBD rating, Rotten tomatoes rating, Country, Language, Plot and actors. 
 
