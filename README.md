@@ -67,6 +67,16 @@ A Language Interpretation and Recognition Interface command line
  
 
 
+
+
+# DEVELOPER TOOLS - 
+
+http://www.omdbapi.com/
+http://www.artists.bandsintown.com/bandsintown-api
+https://www.npmjs.com/package/node-spotify-api
+
+
+
  
 
 
